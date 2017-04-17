@@ -13,9 +13,23 @@ var products = [
 
   new Product({
   imagePath: 'http://icdn8.digitaltrends.com/image/photo-mar-24-1-14-12-pm-edited-1500x1000.jpg',
-  title: 'Iphone Red Wdition',
+  title: 'Iphone Red edition',
   description: 'Awesome Iphone ever!!!!',
   price: 978
+  }),
+
+  new Product({
+  imagePath: 'http://assets.otomotifnet.com/media/article_image/cover/original/65767-wuih-motor-yamaha-motogp-2017-lebih-banyak-warna-hijau.jpg',
+  title: 'Motor 100cc',
+  description: 'Awesome Motor ever!!!!',
+  price: 9978
+  }),
+
+  new Product({
+  imagePath: 'https://product1.djicdn.com/uploads/photos/114/medium_4058afad-4331-40ab-9a4e-30b49c72447b.jpg',
+  title: 'Dji Mavic Pro',
+  description: 'Awesome Drone ever!!!!',
+  price: 1978
   }),
 
   new Product({
@@ -23,7 +37,7 @@ var products = [
   title: 'New MacbookPro',
   description: 'Awesome MacbookPro ever!!!!',
   price: 1365
-  }),
+  })
 ];
 
 var done = 0;
