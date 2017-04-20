@@ -3,7 +3,7 @@ var router = express.Router();
 var Cart = require('../models/cart');
 
 var Product = require('../models/product');
-// var Order = require('../models/order');
+var Order = require('../models/order');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
