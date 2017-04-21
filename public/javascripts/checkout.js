@@ -1,6 +1,6 @@
 Stripe.setPublishableKey('pk_test_2m3G4pUyZvmsfxcUQeqKUF2z');
 
-var $form = $('#checkout-form');
+let $form = $('#checkout-form');
 
 $form.submit(function (event) {
     $('#charge-error').addClass('hidden');
@@ -26,7 +26,7 @@ function stripeResponseHandler(status, response) {
     } else { // Token was created!
 
         // Get the token ID:
-        var token = response.id;
+        let token = response.id;
 
         // Insert the token into the form so it gets submitted to the server:
         $form.append($('<input type="hidden" name="stripeToken" />').val(token));

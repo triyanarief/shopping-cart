@@ -1,9 +1,9 @@
-var Product = require('../models/product');
-var mongoose = require('mongoose');
+const Product = require('../models/product');
+const mongoose = require('mongoose');
 
 mongoose.connect('localhost:27017/shopcart');
 
-var products = [
+let products = [
   new Product({
   imagePath: 'http://cdn.maypalo.com/wp-content/uploads/2016/01/Gear-S2.png',
   title: 'Samsung Gear Watch',
@@ -40,8 +40,8 @@ var products = [
   })
 ];
 
-var done = 0;
-for (var i = 0; i < products.length; i++) {
+let done = 0;
+for (let i = 0; i < products.length; i++) {
   products[i].save(function (err, res) {
     done++;
     if(done === products.length) {
